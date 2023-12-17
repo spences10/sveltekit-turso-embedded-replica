@@ -1,5 +1,7 @@
 import { AUTH_TOKEN, DB_URL, SYNC_URL } from '$env/static/private';
 import { createClient, type Client } from '@libsql/client';
+import { dirname, join } from 'path';
+import { fileURLToPath } from 'url';
 
 let client_instance: Client | null = null;
 
@@ -21,8 +23,11 @@ export const turso_client = (): Client => {
 			}
 		}
 
+		const dir_name = dirname(fileURLToPath(import.meta.url));
+		const local_db_path = join(dir_name, DB_URL as string);
+
 		client_instance = createClient({
-			url: DB_URL as string,
+			url: 'file:' + local_db_path,
 			authToken: AUTH_TOKEN as string,
 			syncUrl: SYNC_URL as string,
 		});
