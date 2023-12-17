@@ -13,10 +13,6 @@ const config = {
 		// See https://kit.svelte.dev/docs/adapters for more information about adapters.
 		adapter: adapter(),
 	},
-
-	optimizeDeps: {
-		exclude: ['@libsql/client'],
-	},
 };
 
 export default config;
