@@ -1,5 +1,5 @@
 import { AUTH_TOKEN, DB_URL, SYNC_URL } from '$env/static/private';
-import { createClient, type Client } from '@libsql/client/web';
+import { createClient, type Client } from '@libsql/client';
 
 let client_instance: Client | null = null;
 
