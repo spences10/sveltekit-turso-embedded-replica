@@ -1,4 +1,4 @@
-import turso_client from '$lib/database/client';
+import { turso_client } from '$lib';
 import type { Value } from '@libsql/client';
 import { error } from '@sveltejs/kit';
 import type { Action, Actions } from './$types';

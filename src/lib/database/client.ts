@@ -3,7 +3,7 @@ import { createClient, type Client } from '@libsql/client';
 
 let client_instance: Client | null = null;
 
-const turso_client = () => {
+export const turso_client = (): Client => {
 	if (!client_instance) {
 		const url = DB_URL?.trim();
 		if (url === undefined) {
@@ -29,5 +29,3 @@ const turso_client = () => {
 	}
 	return client_instance;
 };
-
-export default turso_client;
