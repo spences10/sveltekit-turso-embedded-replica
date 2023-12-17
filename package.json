@@ -1,0 +1,41 @@
+{
+	"name": "sveltekit-turso-embedded-replica",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"test": "npm run test:integration && npm run test:unit",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"lint": "prettier --check . && eslint .",
+		"format": "prettier --write .",
+		"test:integration": "playwright test",
+		"test:unit": "vitest",
+		"postinstall": "tsm src/lib/database/postinstall.ts"
+	},
+	"devDependencies": {
+		"@libsql/client": "0.4.0-pre.5",
+		"@playwright/test": "^1.40.1",
+		"@sveltejs/adapter-auto": "^3.0.0",
+		"@sveltejs/kit": "^2.0.0",
+		"@sveltejs/vite-plugin-svelte": "^3.0.1",
+		"@typescript-eslint/eslint-plugin": "^6.14.0",
+		"@typescript-eslint/parser": "^6.14.0",
+		"dotenv": "^16.3.1",
+		"eslint": "^8.56.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-svelte": "^2.35.1",
+		"prettier": "^3.1.1",
+		"prettier-plugin-svelte": "^3.1.2",
+		"svelte": "5.0.0-next.25",
+		"svelte-check": "^3.6.2",
+		"tslib": "^2.6.2",
+		"tsm": "^2.3.0",
+		"typescript": "^5.3.3",
+		"vite": "^5.0.10",
+		"vitest": "^1.0.4"
+	},
+	"type": "module"
+}
