@@ -4,7 +4,7 @@ import { defineConfig } from 'vitest/config';
 export default defineConfig({
 	plugins: [sveltekit()],
 	optimizeDeps: {
-		exclude: ['@libsql/client'],
+		include: ['@libsql/client'],
 	},
 	test: {
 		include: ['src/**/*.{test,spec}.{js,ts}'],
