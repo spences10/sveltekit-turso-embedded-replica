@@ -3,5 +3,5 @@ services:
     name: sveltekit-turso-embedded-replica
     env: node
     buildCommand: pnpm install && pnpm run build
-    startCommand: node build/index.js
+    startCommand: pnpm run build
     # autoDeploy: false
