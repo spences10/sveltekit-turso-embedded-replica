@@ -22,9 +22,9 @@ export const turso_client = (): Client => {
 		}
 
 		client_instance = createClient({
-			url: DB_URL as string,
+			url: SYNC_URL as string,
 			authToken: AUTH_TOKEN as string,
-			syncUrl: SYNC_URL as string,
+			// syncUrl: SYNC_URL as string,
 		});
 	}
 	return client_instance;
