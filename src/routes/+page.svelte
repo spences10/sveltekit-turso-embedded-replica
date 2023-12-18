@@ -1,4 +1,5 @@
 <script lang="ts">
+	let { data } = $props();
 	let [
 		username = 'Scott',
 		email = 'test1@test.com',
@@ -6,6 +7,8 @@
 		content = 'New Content',
 	] = $state('');
 </script>
+
+<pre>{JSON.stringify(data, null, 2)}</pre>
 
 <form method="POST" action="?/add_content">
 	<input

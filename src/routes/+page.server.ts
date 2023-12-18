@@ -3,6 +3,25 @@ import type { Value } from '@libsql/client';
 import { error } from '@sveltejs/kit';
 import type { Action, Actions } from './$types';
 
+export const load = async () => {
+	let posts;
+	try {
+		const client = turso_client();
+		await client.sync();
+		posts = await client.execute('SELECT * FROM posts');
+	} catch (err) {
+		console.log(`Error: ${err}`);
+		return {
+			status: 500,
+			body: 'Something went wrong fetching contacts',
+		};
+	}
+
+	return {
+		posts: posts.rows,
+	};
+};
+
 const add_content: Action = async ({ request }) => {
 	const form_data = await request.formData();
 	const username = form_data.get('username')?.toString() as Value;
