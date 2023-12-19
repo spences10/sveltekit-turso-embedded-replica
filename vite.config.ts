@@ -3,9 +3,6 @@ import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
 	plugins: [sveltekit()],
-	ssr: {
-		external: ['@libsql/client'],
-	},
 	test: {
 		include: ['src/**/*.{test,spec}.{js,ts}'],
 	},
