@@ -1,12 +1,5 @@
 import { AUTH_TOKEN, DB_URL, SYNC_URL } from '$env/static/private';
-import type { Client } from '@libsql/client';
-import { createRequire } from 'module';
-
-const require = createRequire(import.meta.url ?? __filename);
-
-const {
-	createClient: RequiredCreateClient,
-} = require('@libsql/client');
+import { createClient, type Client } from '@libsql/client';
 
 let client_instance: Client | null = null;
 
@@ -28,15 +21,11 @@ export const turso_client = (): Client => {
 			}
 		}
 
-		client_instance = RequiredCreateClient({
+		client_instance = createClient({
 			url: DB_URL as string,
 			authToken: AUTH_TOKEN as string,
 			syncUrl: SYNC_URL as string,
 		});
-
-		if (!client_instance) {
-			throw new Error('Failed to create Turso client instance');
-		}
 	}
 	return client_instance;
 };
