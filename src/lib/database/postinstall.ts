@@ -7,7 +7,7 @@ import 'dotenv/config';
 const set_remote = async () => {
 	const client = createClient({
 		url: process.env.SYNC_URL?.toString() || ``,
-		authToken: process.env.AUTH_TOKEN
+		authToken: process.env.AUTH_TOKEN,
 	});
 	await run_queries(client);
 };
@@ -17,7 +17,7 @@ const set_local = async () => {
 	const client = createClient({
 		url: process.env.DB_URL?.toString() || ``,
 		authToken: process.env.AUTH_TOKEN,
-		syncUrl: process.env.SYNC_URL
+		syncUrl: process.env.SYNC_URL,
 	});
 	// sync remote to local
 	await client.sync();
@@ -30,12 +30,12 @@ const run_queries = async (client: Client) => {
 	const start = performance.now();
 	for (let i = 0; i < queries; i++) {
 		const rs = await client.execute(
-			'SELECT u.username, p.title, c.content FROM Users u JOIN Posts p ON u.user_id = p.user_id JOIN Comments c ON p.post_id = c.post_id;'
+			'SELECT u.username, p.title, c.content FROM Users u JOIN Posts p ON u.user_id = p.user_id JOIN Comments c ON p.post_id = c.post_id;',
 		);
 
 		for (const row of rs.rows) {
 			console.log(
-				`User ${row.username} posted '${row.title}' with a comment: '${row.content}'`
+				`User ${row.username} posted '${row.title}' with a comment: '${row.content}'`,
 			);
 		}
 	}
@@ -43,9 +43,7 @@ const run_queries = async (client: Client) => {
 	console.log(`took ${delta}, ${delta / queries} per query`);
 };
 
-const main = async () => {
+export const initialize_database = async () => {
 	await set_remote();
 	await set_local();
 };
-
-main().catch(console.error);

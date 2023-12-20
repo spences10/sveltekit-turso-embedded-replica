@@ -2,8 +2,18 @@ import { turso_client } from '$lib';
 import type { Value } from '@libsql/client';
 import { error } from '@sveltejs/kit';
 import type { Action, Actions } from './$types';
+import { check_db_exists } from '$lib/database/check-local-db';
+import { initialize_database } from '$lib/database/postinstall';
 
 export const load = async () => {
+	// Check if local DB exists
+	const db_exists = await check_db_exists();
+	if (!db_exists) {
+		console.log('=====================');
+		console.log(`Local DB doesn't exist`);
+		console.log('=====================');
+		await initialize_database(); // Initialize the database if it doesn't exist
+	}
 	let posts;
 	try {
 		const client = turso_client();

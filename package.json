@@ -3,6 +3,7 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
+		"start": "node build",
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
@@ -12,11 +13,10 @@
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
 		"test:integration": "playwright test",
-		"test:unit": "vitest",
-		"postinstall": "tsm src/lib/database/postinstall.ts"
+		"test:unit": "vitest"
 	},
 	"devDependencies": {
-		"@libsql/client": "0.4.0-pre.5",
+		"@flydotio/dockerfile": "^0.5.0",
 		"@playwright/test": "^1.40.1",
 		"@sveltejs/adapter-node": "^2.0.0",
 		"@sveltejs/kit": "^2.0.1",
@@ -37,5 +37,8 @@
 		"vite": "^5.0.10",
 		"vitest": "^1.0.4"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@libsql/client": "0.4.0-pre.5"
+	}
 }
