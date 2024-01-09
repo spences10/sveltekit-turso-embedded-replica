@@ -16,7 +16,7 @@
 		"postinstall": "tsm src/lib/database/postinstall.ts"
 	},
 	"devDependencies": {
-		"@libsql/client": "0.4.0-pre.5",
+		"@libsql/client": "0.4.0-pre.7",
 		"@playwright/test": "^1.40.1",
 		"@sveltejs/adapter-node": "^2.0.0",
 		"@sveltejs/kit": "^2.0.1",
