@@ -52,7 +52,7 @@ importers:
         version: 5.0.0-next.151
       svelte-check:
         specifier: ^3.6.2
-        version: 3.7.0(postcss-load-config@3.1.4(postcss@8.4.38))(postcss@8.4.38)(svelte@5.0.0-next.151)
+        version: 3.8.0(postcss-load-config@3.1.4(postcss@8.4.38))(postcss@8.4.38)(svelte@5.0.0-next.151)
       tslib:
         specifier: ^2.6.2
         version: 2.6.2
@@ -724,8 +724,8 @@ packages:
   brace-expansion@2.0.1:
     resolution: {integrity: sha512-XnAIvQ8eM+kC6aULx6wuQiwVsnzsi9d3WxzV3FpWTGA19F621kwdbsAcFKXgKUHZWsy+mY6iL1sHTxWEFCytDA==}
 
-  braces@3.0.2:
-    resolution: {integrity: sha512-b8um+L1RzM3WDSzvhm6gIz1yfTbBt6YTlcEKAvsmqCZZFw46z626lVj9j1yEPW33H5H+lBQpZMP1k8l+78Ha0A==}
+  braces@3.0.3:
+    resolution: {integrity: sha512-yQbXgO/OSZVD2IsiLlro+7Hf6Q18EJrKSEsdoMzKePKXct3gvD8oLcOQdIzGupr5Fj+EDe8gO/lxc1BzfMpxvA==}
     engines: {node: '>=8'}
 
   buffer-crc32@0.2.13:
@@ -1082,8 +1082,8 @@ packages:
     resolution: {integrity: sha512-XXTUwCvisa5oacNGRP9SfNtYBNAMi+RPwBFmblZEF7N7swHYQS6/Zfk7SRwx4D5j3CH211YNRco1DEMNVfZCnQ==}
     engines: {node: '>=16.0.0'}
 
-  fill-range@7.0.1:
-    resolution: {integrity: sha512-qOo9F+dMUmC2Lcb4BbVvnKJxTPjCm+RRpe4gDuGrzkL7mEVl/djYSu2OdQ2Pa302N4oqkSg9ir6jaLWJ2USVpQ==}
+  fill-range@7.1.1:
+    resolution: {integrity: sha512-YsGpe3WHLK8ZYi4tWDg2Jy3ebRz2rXowDxnld4bkQB00cc/1Zw9AWnC0i9ztDJitivtQvaI9KaLyKrc+hBW0yg==}
     engines: {node: '>=8'}
 
   find-up@5.0.0:
@@ -1307,8 +1307,8 @@ packages:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
     engines: {node: '>= 8'}
 
-  micromatch@4.0.5:
-    resolution: {integrity: sha512-DMy+ERcEW2q8Z2Po+WNXuw3c5YaUSFjAO5GsJqfEl7UjvtIuFKO6ZrKvcItdy98dwFI2N1tg3zNIdKaQT+aNdA==}
+  micromatch@4.0.7:
+    resolution: {integrity: sha512-LPP/3KorzCwBxfeUuZmaR6bG2kdeHSbe0P2tY3FLRU4vYrjYz5hI4QZwV0njUx3jeuKe67YukQ1LSPZBKDqO/Q==}
     engines: {node: '>=8.6'}
 
   mimic-fn@4.0.0:
@@ -1430,9 +1430,6 @@ packages:
 
   pathval@1.1.1:
     resolution: {integrity: sha512-Dp6zGqpTdETdR63lehJYPeIOqpiNBNtc7BpWSLrOje7UaIsE5aY92r/AunQA7rsXvet3lrJ3JnZX29UPTKXyKQ==}
-
-  picocolors@1.0.0:
-    resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
 
   picocolors@1.0.1:
     resolution: {integrity: sha512-anP1Z8qwhkbmu7MFP5iTt+wQKXgwzf7zTyGlcdzabySa9vd0Xt392U0rVmz9poOaBj0uHJKyyo9/upk0HrEQew==}
@@ -1628,8 +1625,8 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  svelte-check@3.7.0:
-    resolution: {integrity: sha512-Va6sGL4Vy4znn0K+vaatk98zoBvG2aDee4y3r5X4S80z8DXfbACHvdLlyXa4C4c5tQzK9H0Uq2pbd20wH3ucjQ==}
+  svelte-check@3.8.0:
+    resolution: {integrity: sha512-7Nxn+3X97oIvMzYJ7t27w00qUf1Y52irE2RU2dQAd5PyvfGp4E7NLhFKVhb6PV2fx7dCRMpNKDIuazmGthjpSQ==}
     hasBin: true
     peerDependencies:
       svelte: ^3.55.0 || ^4.0.0-next.0 || ^4.0.0 || ^5.0.0-next.0
@@ -2442,9 +2439,9 @@ snapshots:
     dependencies:
       balanced-match: 1.0.2
 
-  braces@3.0.2:
+  braces@3.0.3:
     dependencies:
-      fill-range: 7.0.1
+      fill-range: 7.1.1
 
   buffer-crc32@0.2.13: {}
 
@@ -2476,7 +2473,7 @@ snapshots:
   chokidar@3.6.0:
     dependencies:
       anymatch: 3.1.3
-      braces: 3.0.2
+      braces: 3.0.3
       glob-parent: 5.1.2
       is-binary-path: 2.1.0
       is-glob: 4.0.3
@@ -2792,7 +2789,7 @@ snapshots:
       '@nodelib/fs.walk': 1.2.8
       glob-parent: 5.1.2
       merge2: 1.4.1
-      micromatch: 4.0.5
+      micromatch: 4.0.7
 
   fast-json-stable-stringify@2.1.0: {}
 
@@ -2811,7 +2808,7 @@ snapshots:
     dependencies:
       flat-cache: 4.0.1
 
-  fill-range@7.0.1:
+  fill-range@7.1.1:
     dependencies:
       to-regex-range: 5.0.1
 
@@ -3018,9 +3015,9 @@ snapshots:
 
   merge2@1.4.1: {}
 
-  micromatch@4.0.5:
+  micromatch@4.0.7:
     dependencies:
-      braces: 3.0.2
+      braces: 3.0.3
       picomatch: 2.3.1
 
   mimic-fn@4.0.0: {}
@@ -3124,8 +3121,6 @@ snapshots:
   pathe@1.1.2: {}
 
   pathval@1.1.1: {}
-
-  picocolors@1.0.0: {}
 
   picocolors@1.0.1: {}
 
@@ -3323,13 +3318,13 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
-  svelte-check@3.7.0(postcss-load-config@3.1.4(postcss@8.4.38))(postcss@8.4.38)(svelte@5.0.0-next.151):
+  svelte-check@3.8.0(postcss-load-config@3.1.4(postcss@8.4.38))(postcss@8.4.38)(svelte@5.0.0-next.151):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
       chokidar: 3.6.0
       fast-glob: 3.3.2
       import-fresh: 3.3.0
-      picocolors: 1.0.0
+      picocolors: 1.0.1
       sade: 1.8.1
       svelte: 5.0.0-next.151
       svelte-preprocess: 5.1.4(postcss-load-config@3.1.4(postcss@8.4.38))(postcss@8.4.38)(svelte@5.0.0-next.151)(typescript@5.4.5)
