@@ -16,10 +16,10 @@ importers:
         version: 1.47.2
       '@sveltejs/adapter-node':
         specifier: ^5.0.0
-        version: 5.2.5(@sveltejs/kit@2.5.28(@sveltejs/vite-plugin-svelte@3.1.2(svelte@5.0.0-next.240)(vite@5.4.6(@types/node@20.14.10)))(svelte@5.0.0-next.240)(vite@5.4.6(@types/node@20.14.10)))
+        version: 5.2.5(@sveltejs/kit@2.6.3(@sveltejs/vite-plugin-svelte@3.1.2(svelte@5.0.0-next.240)(vite@5.4.6(@types/node@20.14.10)))(svelte@5.0.0-next.240)(vite@5.4.6(@types/node@20.14.10)))
       '@sveltejs/kit':
         specifier: ^2.0.1
-        version: 2.5.28(@sveltejs/vite-plugin-svelte@3.1.2(svelte@5.0.0-next.240)(vite@5.4.6(@types/node@20.14.10)))(svelte@5.0.0-next.240)(vite@5.4.6(@types/node@20.14.10))
+        version: 2.6.3(@sveltejs/vite-plugin-svelte@3.1.2(svelte@5.0.0-next.240)(vite@5.4.6(@types/node@20.14.10)))(svelte@5.0.0-next.240)(vite@5.4.6(@types/node@20.14.10))
       '@sveltejs/vite-plugin-svelte':
         specifier: ^3.0.1
         version: 3.1.2(svelte@5.0.0-next.240)(vite@5.4.6(@types/node@20.14.10))
@@ -568,8 +568,8 @@ packages:
     peerDependencies:
       '@sveltejs/kit': ^2.4.0
 
-  '@sveltejs/kit@2.5.28':
-    resolution: {integrity: sha512-/O7pvFGBsQPcFa9UrW8eUC5uHTOXLsUp3SN0dY6YmRAL9nfPSrJsSJk//j5vMpinSshzUjteAFcfQTU+04Ka1w==}
+  '@sveltejs/kit@2.6.3':
+    resolution: {integrity: sha512-baIAnmfMqAISrPtTC/22w6ay5kTEIQ/vq9bctiaQgRIoLCPBNhb6LEidTuWQS7OzPYCDBMuMX1t/fMvi4r3q/g==}
     engines: {node: '>=18.13'}
     hasBin: true
     peerDependencies:
@@ -717,10 +717,6 @@ packages:
 
   ajv@6.12.6:
     resolution: {integrity: sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==}
-
-  ansi-regex@5.0.1:
-    resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
-    engines: {node: '>=8'}
 
   ansi-styles@4.3.0:
     resolution: {integrity: sha512-zbB9rCJAT1rbjiVDb2hqKFHNYLxgtk8NURxZ3IZwD3F6NtxbXZQCnnSi1Lkx+IDohdPlFp222wVALIheZJQSEg==}
@@ -1506,10 +1502,6 @@ packages:
   std-env@3.7.0:
     resolution: {integrity: sha512-JPbdCEQLj1w5GilpiHAx3qJvFndqybBysA3qUOnznweH4QbNYUsW/ea8QzSrnh0vNsezMMw5bcVool8lM0gwzg==}
 
-  strip-ansi@6.0.1:
-    resolution: {integrity: sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==}
-    engines: {node: '>=8'}
-
   strip-json-comments@3.1.1:
     resolution: {integrity: sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==}
     engines: {node: '>=8'}
@@ -2080,15 +2072,15 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.24.0':
     optional: true
 
-  '@sveltejs/adapter-node@5.2.5(@sveltejs/kit@2.5.28(@sveltejs/vite-plugin-svelte@3.1.2(svelte@5.0.0-next.240)(vite@5.4.6(@types/node@20.14.10)))(svelte@5.0.0-next.240)(vite@5.4.6(@types/node@20.14.10)))':
+  '@sveltejs/adapter-node@5.2.5(@sveltejs/kit@2.6.3(@sveltejs/vite-plugin-svelte@3.1.2(svelte@5.0.0-next.240)(vite@5.4.6(@types/node@20.14.10)))(svelte@5.0.0-next.240)(vite@5.4.6(@types/node@20.14.10)))':
     dependencies:
       '@rollup/plugin-commonjs': 28.0.0(rollup@4.23.0)
       '@rollup/plugin-json': 6.1.0(rollup@4.23.0)
       '@rollup/plugin-node-resolve': 15.3.0(rollup@4.23.0)
-      '@sveltejs/kit': 2.5.28(@sveltejs/vite-plugin-svelte@3.1.2(svelte@5.0.0-next.240)(vite@5.4.6(@types/node@20.14.10)))(svelte@5.0.0-next.240)(vite@5.4.6(@types/node@20.14.10))
+      '@sveltejs/kit': 2.6.3(@sveltejs/vite-plugin-svelte@3.1.2(svelte@5.0.0-next.240)(vite@5.4.6(@types/node@20.14.10)))(svelte@5.0.0-next.240)(vite@5.4.6(@types/node@20.14.10))
       rollup: 4.23.0
 
-  '@sveltejs/kit@2.5.28(@sveltejs/vite-plugin-svelte@3.1.2(svelte@5.0.0-next.240)(vite@5.4.6(@types/node@20.14.10)))(svelte@5.0.0-next.240)(vite@5.4.6(@types/node@20.14.10))':
+  '@sveltejs/kit@2.6.3(@sveltejs/vite-plugin-svelte@3.1.2(svelte@5.0.0-next.240)(vite@5.4.6(@types/node@20.14.10)))(svelte@5.0.0-next.240)(vite@5.4.6(@types/node@20.14.10))':
     dependencies:
       '@sveltejs/vite-plugin-svelte': 3.1.2(svelte@5.0.0-next.240)(vite@5.4.6(@types/node@20.14.10))
       '@types/cookie': 0.6.0
@@ -2284,8 +2276,6 @@ snapshots:
       fast-json-stable-stringify: 2.1.0
       json-schema-traverse: 0.4.1
       uri-js: 4.4.1
-
-  ansi-regex@5.0.1: {}
 
   ansi-styles@4.3.0:
     dependencies:
@@ -3022,10 +3012,6 @@ snapshots:
   stackback@0.0.2: {}
 
   std-env@3.7.0: {}
-
-  strip-ansi@6.0.1:
-    dependencies:
-      ansi-regex: 5.0.1
 
   strip-json-comments@3.1.1: {}
 
