@@ -31,7 +31,7 @@ importers:
         version: 8.8.1(eslint@9.17.0)(typescript@5.7.2)
       dotenv:
         specifier: ^16.3.1
-        version: 16.4.5
+        version: 16.5.0
       eslint:
         specifier: ^9.0.0
         version: 9.17.0
@@ -894,8 +894,8 @@ packages:
   devalue@5.1.1:
     resolution: {integrity: sha512-maua5KUiapvEwiEAe+XnlZ3Rh0GD+qI1J/nb9vrJc3muPXvcF/8gXYTWF76+5DAqHyDUtOIImEuo0YKE9mshVw==}
 
-  dotenv@16.4.5:
-    resolution: {integrity: sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==}
+  dotenv@16.5.0:
+    resolution: {integrity: sha512-m/C+AwOAr9/W1UOIZUo232ejMNnJAJtYQjUbHoNTBNTJSvqzzDh7vnrei3o3r3m9blf6ZoDkvcw0VmozNRFJxg==}
     engines: {node: '>=12'}
 
   esbuild-android-64@0.15.18:
@@ -2433,7 +2433,7 @@ snapshots:
 
   devalue@5.1.1: {}
 
-  dotenv@16.4.5: {}
+  dotenv@16.5.0: {}
 
   esbuild-android-64@0.15.18:
     optional: true
